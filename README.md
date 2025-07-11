@@ -1,74 +1,26 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+Personalized Yoga and health Recommendation and 
+Real time posture Correction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Abstract : 
+The prevalence of unsubstantiated health and yoga information on the internet tends 
+to mislead people into adhering to false advice and undertaking excessively strenuous 
+postures, resulting in physical harm, distress, or futile results. Existing solutions 
+utilize basic NLP to recommend yoga poses based on limited keywords and lack 
+intensity-based posture correction. 
+Our solution overcomes the shortcomings of current health and yoga apps. It uses 
+cutting-edge transformer model whose F1 sore obtained is 0.92 to understand user 
+inquires for context and provides personalized health advice and yoga pose 
+suggestions according to one’s job, disease, and fitness aspirations. Unlike 
+conventional keyword based systems, the model produces accurate and precise 
+answers by understanding meaning of complete sentence. 
+In addition, the system also has a deep learning-based posture correction module, 
+whose model’s test accuracy is obtained as 99.53%. It uses the MoveNet model to 
+detect the main body landmarks in real-time. Users can select the posture of their 
+choice and level of intensity, after which the model provides real-time audio 
+instructions and feedback for correction. This guarantees that postures are executed 
+according to the person’s capability, lowering the chance of damage and enhancing 
+efficiency. Alternatively the system provides a complete, intuitive experience that 
+promotes safe and meaningful practice of yoga.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# health-and-yoga-
->>>>>>> b85f7fa84634b4655974a1b7eacf131952df18d7
+UML Diagram :
+<img width="883" height="730" alt="image" src="https://github.com/user-attachments/assets/f6b4f275-7ecf-4139-941e-2966266d9761" />
