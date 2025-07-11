@@ -1,49 +1,97 @@
-🧘‍♀️ Personalized Yoga & Health Recommendation and Real-Time Posture Correction
-📌 Abstract
-The abundance of misleading and unverified yoga and health advice online often causes individuals to follow inappropriate practices or attempt postures beyond their physical capability, resulting in injuries, discomfort, or lack of results.
+# 🧘‍♀️ Personalized Yoga & Health Recommendation + Real-Time Posture Correction
 
-Existing solutions typically rely on basic keyword-based NLP approaches, which lack contextual understanding and fail to account for posture intensity or personal health conditions.
+![Python](https://img.shields.io/badge/Made%20with-Python-blue?style=for-the-badge&logo=python)
+![OpenCV](https://img.shields.io/badge/Library-OpenCV-yellow?style=for-the-badge&logo=opencv)
+![Transformers](https://img.shields.io/badge/NLP-Transformers-green?style=for-the-badge)
+![Posture Detection](https://img.shields.io/badge/Posture-MoveNet%20Thunder-orange?style=for-the-badge)
 
-Our solution addresses these limitations through two integrated modules:
+---
 
-✅ 1. Intelligent Yoga & Health Recommendation System
-Uses a Transformer-based NLP model (F1 score: 0.92) to understand complete user queries, job profiles, fitness goals, and medical history.
+## 📌 Abstract
 
-Delivers highly personalized yoga pose suggestions and lifestyle advice based on the context—not just keywords.
+> With rising misinformation around yoga and health online, many follow unsafe advice or attempt extreme postures, leading to injury or poor results.  
+>  
+> Our system offers:
+- 🤖 Transformer-based health & yoga recommendations (F1 Score: **0.92**)
+- 🧠 Real-time posture correction using MoveNet (Test Accuracy: **99.53%**)
 
-Offers a health bot for direct Q&A related to sleep, diet, immunity, and general wellness.
+It provides **personalized yoga suggestions** based on a user's job, condition, and goals, and delivers **audio-guided real-time correction**, ensuring safe, efficient practice.
 
-✅ 2. AI-Based Posture Correction System
-Incorporates a deep learning model with 99.53% test accuracy for real-time pose analysis.
+---
 
-Uses Google's MoveNet to detect and monitor key body landmarks.
+## 🧭 UML Architecture
 
-Allows users to select a yoga posture and desired intensity level, then provides real-time audio feedback and correction instructions.
+<img width="500" alt="UML Diagram" src="https://github.com/user-attachments/assets/f6b4f275-7ecf-4139-941e-2966266d9761" />
 
-Ensures postures are performed safely and effectively, tailored to the user's fitness level—reducing injury risk and maximizing benefit.
+---
 
-This system delivers a complete, intuitive experience that promotes the safe, meaningful, and personalized practice of yoga.
+## 🧠 Recommendation System
 
-🧭 UML Diagram
-<img width="500" height="500" alt="UML Diagram" src="https://github.com/user-attachments/assets/f6b4f275-7ecf-4139-941e-2966266d9761" />
-🔍 Recommendation System Results
-🔄 Transformers Tested
-<img width="852" height="275" alt="Transformers Results" src="https://github.com/user-attachments/assets/5eb92332-d5b0-4e52-b6f3-8a6f6ffc4d04" />
-🗃️ Databases Evaluated
-<img width="844" height="256" alt="Database Results" src="https://github.com/user-attachments/assets/3b3036a0-54fd-4d78-89a0-ac19b65ff042" />
-💬 Health Bot Interface
-<img width="844" height="256" alt="Health Bot" src="https://github.com/user-attachments/assets/5b2df548-68bb-467a-94ca-e214de4cdbd4" />
-❓ Example Questions and Answers
-Question	Answer
-What is the best way to sleep?	Sleeping on your back or left side promotes spinal alignment and better digestion.
-Diet for better sleep	Eat foods high in tryptophan like bananas, milk, yogurt, and oats.
-Tips for doctor to follow	Hand sanitization reminder: Prevent infections by regularly sanitizing hands.
-Yogasanas to increase height	Tadasana, Pashchimottanasana, Bhujangasana
+### 🔍 Transformers Tested
 
-🧘‍♀️ Yogasana Recommendation Screenshot
-<img width="866" height="479" alt="Yoga Recommendation" src="https://github.com/user-attachments/assets/07d6c4c0-95d3-4d49-b93c-18619be5a7e3" />
-🧠 Posture Correction System Results
-📊 Model Accuracy
-<img width="865" height="142" alt="Correction Accuracy" src="https://github.com/user-attachments/assets/7a761dfe-6f91-4399-ba57-b9677102a61d" />
-📷 Real-Time Feedback Examples
-<img width="868" height="511" alt="Pose Correction 1" src="https://github.com/user-attachments/assets/6aac2a6f-0180-4f4d-8647-cf72973c54ae" /> <img width="881" height="454" alt="Pose Correction 2" src="https://github.com/user-attachments/assets/ee1ed0b6-cf93-469f-a62f-9e51ed8114cb" />
+<img width="852" alt="Transformers Results" src="https://github.com/user-attachments/assets/5eb92332-d5b0-4e52-b6f3-8a6f6ffc4d04" />
+
+### 🗃️ Databases Evaluated
+
+<img width="844" alt="Database Results" src="https://github.com/user-attachments/assets/3b3036a0-54fd-4d78-89a0-ac19b65ff042" />
+
+### 🤖 Health Bot Interface
+
+<img width="844" alt="Health Bot" src="https://github.com/user-attachments/assets/5b2df548-68bb-467a-94ca-e214de4cdbd4" />
+
+### 💬 Sample Questions & Answers
+
+| **Question**                         | **Answer**                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| What is the best way to sleep?       | Sleeping on your back or left side promotes spinal alignment and digestion. |
+| Diet for better sleep                | Eat foods high in tryptophan like bananas, milk, yogurt, and oats.          |
+| Tips for doctor to follow            | Hand sanitization reminder: sanitize regularly to prevent infections.       |
+| Yogasanas to increase height         | Tadasana, Pashchimottanasana, Bhujangasana                                  |
+
+### 🧘 Yoga Recommendation Screenshot
+
+<img width="866" alt="Yoga Recommendation" src="https://github.com/user-attachments/assets/07d6c4c0-95d3-4d49-b93c-18619be5a7e3" />
+
+---
+
+## 🧍‍♂️ Posture Correction System
+
+### ✅ Accuracy Metrics
+
+<img width="865" alt="Correction Accuracy" src="https://github.com/user-attachments/assets/7a761dfe-6f91-4399-ba57-b9677102a61d" />
+
+### 📸 Real-Time Correction Feedback
+
+<img width="868" alt="Pose Correction 1" src="https://github.com/user-attachments/assets/6aac2a6f-0180-4f4d-8647-cf72973c54ae" />
+
+<img width="881" alt="Pose Correction 2" src="https://github.com/user-attachments/assets/ee1ed0b6-cf93-469f-a62f-9e51ed8114cb" />
+
+---
+
+## ⚙️ Tech Stack
+
+| Category            | Tools / Models                                 |
+|---------------------|-------------------------------------------------|
+| 🧠 NLP              | Transformers (BERT-like), LIME for explainability |
+| 🏃‍♀️ Pose Detection | MoveNet Thunder (real-time keypoints)           |
+| 🗂 Classifier       | Random Forest for yoga posture mapping          |
+| 🔊 Feedback         | Google TTS for real-time correction guidance    |
+| 🎨 UI               | Streamlit / Web interface (optional)            |
+
+---
+
+## 🚀 Future Enhancements
+
+- 🔗 Integration with wearables (smartwatches, fitness bands)
+- 🌐 Multilingual voice support
+- 📊 Progress tracking dashboard
+- 🧘 Mental wellness and meditation recommendations
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
