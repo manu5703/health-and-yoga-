@@ -37,7 +37,8 @@ It provides **personalized yoga suggestions** based on a user's job, condition, 
 
 ### 🤖 Health Bot Interface
 
-<img width="844" alt="Health Bot" src="https://github.com/user-attachments/assets/5b2df548-68bb-467a-94ca-e214de4cdbd4" />
+<img width="844" alt="image" src="https://github.com/user-attachments/assets/d42f29ba-094e-4f98-91dc-392153424350" />
+
 
 ### 💬 Sample Questions & Answers
 
