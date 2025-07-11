@@ -71,13 +71,15 @@ It provides **personalized yoga suggestions** based on a user's job, condition, 
 
 ## ⚙️ Tech Stack
 
-| Category            | Tools / Models                                 |
-|---------------------|-------------------------------------------------|
-| 🧠 NLP              | Transformers (BERT-like), LIME for explainability |
-| 🏃‍♀️ Pose Detection | MoveNet Thunder (real-time keypoints)           |
-| 🗂 Classifier       | Random Forest for yoga posture mapping          |
-| 🔊 Feedback         | Google TTS for real-time correction guidance    |
-| 🎨 UI               | Streamlit / Web interface (optional)            |
+| **Category**                | **Tools / Libraries / Models**                                                                                                                                                                     |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🧑‍💻 **Languages & Libraries** | Python, NumPy, Pandas, `re`, Pickle, Keras                                                                                                                                                         |
+| 📚 **NLP & Embeddings**     | [Sentence Transformers](https://www.sbert.net/), [intfloat/e5-base](https://huggingface.co/intfloat/e5-base) for contextual sentence embeddings                                                   |
+| 🧠 **Classification**       | [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli) for zero-shot classification into categories like general health, yoga asanas, diet, or activity recommendations     |
+| 🔍 **Semantic Search**      | [FAISS](https://github.com/facebookresearch/faiss) for efficient similarity search across vector representations                                                                                   |
+| 🧮 **Deep Learning Models** | Custom-trained Keras model for personalized yoga pose recommendations and real-time posture correction                                                                                              |
+| 🧍 **Pose Detection**       | [MoveNet Thunder](https://www.tensorflow.org/lite/models/pose_estimation/overview) for real-time human keypoint tracking                                                                           |
+
 
 ---
 
