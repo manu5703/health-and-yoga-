@@ -30,7 +30,7 @@ def faiss_index(category_name):
     category_indexes[category_name] = index
     category_data[category_name] = texts
 
-# Load previously saved indexes and text data
+# Load saved indexes and text data
 faiss_index("general_health")
 faiss_index("profession_tips")
 faiss_index("condition_based")
@@ -74,7 +74,7 @@ def extract_best_sentence(passage, query):
 
 def get_response(user_query, top_k=3):
     category = detect_category(user_query)
-    print(f"\n🔍 Detected Category: {category.replace('_', ' ').title()}")
+    print(f"\n Detected Category: {category.replace('_', ' ').title()}")
 
     query_vector = embedding_model.encode(user_query).reshape(1, -1)
     index = category_indexes.get(category)
@@ -107,21 +107,17 @@ def get_response(user_query, top_k=3):
         general_tips_lines = extract_lines("General Tips")
         profession_tips_lines = extract_lines("Profession Tips")
 
-        # Prepare response
+        # Response
         response_text = condition_line
         if category=='profession_tips' or category =='asana_benefits' or category == 'general_health':
-            print("\n🔍 Processing Document:\n", doc)
+            print("\n Processing Document:\n", doc)
 
-        # ❗ If query includes other specific keywords, return only those
+        # If query includes other specific keywords, return only those
         if category == 'condition_based_diet':
             response_text += "\nDiet:\n" + "\n".join(diet_lines) if diet_lines else "No diet tips found."
 
         if category == 'condition_based':
             response_text += "\nActivities:\n" + "\n".join(activity_lines) if activity_lines else "No activities found."
-
-
-
-
         else:
             # Default: return everything
             response_text += "\nDiet:\n" + "\n".join(diet_lines) if diet_lines else ""
@@ -132,7 +128,7 @@ def get_response(user_query, top_k=3):
     return "\n\n".join(formatted_docs)
 
 if __name__ == "__main__":
-    print("\n🧘‍♀️ Welcome to Yoga Recommendation CLI 🧘‍♂️")
+    print("\n Welcome to Yoga Recommendation CLI ")
     prompt = sys.argv[1] 
     response = get_response(prompt)
-    print(f"\n💬 Chatbot:\n{response}\n")
+    print(f"\n Chatbot:\n{response}\n")
