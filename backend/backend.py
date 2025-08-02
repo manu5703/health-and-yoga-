@@ -7,13 +7,12 @@ from transformers import pipeline
 import re
 import sys
 
-# Load 384-dimensional embedding model
-embedding_model = SentenceTransformer("intfloat/e5-base")  # 384-d
+embedding_model = SentenceTransformer("intfloat/e5-base") 
 
-# Load zero-shot classifier
+# Zero-shot classifier to categorize into dataset category
 classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
-# Define categories and their descriptions
+# Categories and their descriptions
 category_labels = {
     "asana_benefits": "Yoga asanas and postures with benefits and contradictions",
     "condition_based": "Diet and nutrition recommendations for specific health conditions",
@@ -24,7 +23,7 @@ category_labels = {
 # Initialize storage dicts
 category_indexes = {}
 category_data = {}
-def load_faiss_index(category_name):
+def faiss_index(category_name):
     index = faiss.read_index(f"{category_name}.index")
     with open(f"{category_name}_data.pkl", "rb") as f:
         texts = pickle.load(f)
@@ -32,11 +31,11 @@ def load_faiss_index(category_name):
     category_data[category_name] = texts
 
 # Load previously saved indexes and text data
-load_faiss_index("general_health")
-load_faiss_index("profession_tips")
-load_faiss_index("condition_based")
-load_faiss_index("condition_based_diet")
-load_faiss_index("asana_benefits")
+faiss_index("general_health")
+faiss_index("profession_tips")
+faiss_index("condition_based")
+faiss_index("condition_based_diet")
+faiss_index("asana_benefits")
 
 # -------------------- Category Detection --------------------
 def detect_category(query):
