@@ -40,9 +40,9 @@ profession_df["Health Tip"] = profession_df["Health Tip"].astype(str).str.split(
 profession_tips = profession_df.groupby("Profession")["Health Tip"].sum().to_dict()
 
 # ------------------ Load Precomputed FAISS Index ------------------
-faiss_index = faiss.read_index("asana_benefits.index")  # <- Replace with your path
+faiss_index = faiss.read_index("asana_benefits.index") 
 
-with open("asana_benefits_data.pkl", "rb") as f:         # <- Replace with your path
+with open("asana_benefits_data.pkl", "rb") as f:       
     asana_embeddings = pickle.load(f)
 
 # ------------------ Match Profession ------------------
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     recommended = retrieve_asanas(query)
 
     if recommended.empty:
-        print("⚠️ No matching asanas found.")
+        print("No matching asanas found.")
     else:
         for _, row in recommended.iterrows():
             print(f"\nAsana: {row['asana']}")
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     print("\nYour Daily Wellness Schedule:")
     schedule = generate_schedule(30, 20, "09:00", "17:00", 120, profession)
     for time_str, task in schedule:
-        print(f"⏰ {time_str} ➝ {task}")
+        print(f"{time_str} ➝ {task}")
     output_schedule = [{"time": time_str, "task": task} for time_str, task in schedule]
 
 # Save to JSON file
