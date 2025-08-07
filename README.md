@@ -73,22 +73,22 @@ It provides **personalized yoga suggestions** based on a user's job, condition, 
 
 | **Category**                | **Tools / Libraries / Models**                                                                                                                                                                     |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 🧑‍💻 **Languages & Libraries** | Python, NumPy, Pandas, `re`, Pickle, Keras                                                                                                                                                         |
-| 📚 **NLP & Embeddings**     | [Sentence Transformers](https://www.sbert.net/), [intfloat/e5-base](https://huggingface.co/intfloat/e5-base) for contextual sentence embeddings                                                   |
-| 🧠 **Classification**       | [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli) for zero-shot classification into categories like general health, yoga asanas, diet, or activity recommendations     |
-| 🔍 **Semantic Search**      | [FAISS](https://github.com/facebookresearch/faiss) for efficient similarity search across vector representations                                                                                   |
-| 🧮 **Deep Learning Models** | Custom-trained Keras model for personalized yoga pose recommendations and real-time posture correction                                                                                              |
-| 🧍 **Pose Detection**       | [MoveNet Thunder](https://www.tensorflow.org/lite/models/pose_estimation/overview) for real-time human keypoint tracking                                                                           |
+|  **Languages & Libraries** | Python, NumPy, Pandas, `re`, Pickle, Keras                                                                                                                                                         |
+|  **NLP & Embeddings**     | [Sentence Transformers](https://www.sbert.net/), [intfloat/e5-base](https://huggingface.co/intfloat/e5-base) for contextual sentence embeddings                                                   |
+|  **Classification**       | [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli) for zero-shot classification into categories like general health, yoga asanas, diet, or activity recommendations     |
+|  **Semantic Search**      | [FAISS](https://github.com/facebookresearch/faiss) for efficient similarity search across vector representations                                                                                   |
+|  **Deep Learning Models** | Custom-trained Keras model for personalized yoga pose recommendations and real-time posture correction                                                                                              |
+|  **Pose Detection**       | [MoveNet Thunder](https://www.tensorflow.org/lite/models/pose_estimation/overview) for real-time human keypoint tracking                                                                           |
 
 
 ---
 
 ## 🚀 Future Enhancements
 
-- 🔗 Integration with wearables (smartwatches, fitness bands)
-- 🌐 Multilingual voice support
-- 📊 Progress tracking dashboard
-- 🧘 Mental wellness and meditation recommendations
+-  Integration with wearables (smartwatches, fitness bands)
+-  Multilingual voice support
+-  Progress tracking dashboard
+-  Mental wellness and meditation recommendations
 
 ---
 
