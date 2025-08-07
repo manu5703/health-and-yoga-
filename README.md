@@ -12,8 +12,8 @@
 > With rising misinformation around yoga and health online, many follow unsafe advice or attempt extreme postures, leading to injury or poor results.  
 >  
 > Our system offers:
-- 🤖 Transformer-based health & yoga recommendations (F1 Score: **0.92**)
-- 🧠 Real-time posture correction using MoveNet (Test Accuracy: **99.53%**)
+-  Transformer-based health & yoga recommendations (F1 Score: **0.92**)
+-  Real-time posture correction using MoveNet (Test Accuracy: **99.53%**)
 
 It provides **personalized yoga suggestions** based on a user's job, condition, and goals, and delivers **audio-guided real-time correction**, ensuring safe, efficient practice.
 
